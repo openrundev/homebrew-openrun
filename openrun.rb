@@ -5,22 +5,22 @@
 class Openrun < Formula
   desc ""
   homepage "https://openrun.dev"
-  version "0.16.17"
+  version "0.16.19"
 
   depends_on "mkcert"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/openrundev/openrun/releases/download/v0.16.17/openrun-v0.16.17-darwin-amd64.tar.gz"
-      sha256 "a1530e4afa4a3d054de9f5cf13d842b6427a0d0bc4ba13b8fc51db02d88a1e84"
+      url "https://github.com/openrundev/openrun/releases/download/v0.16.19/openrun-v0.16.19-darwin-amd64.tar.gz"
+      sha256 "8ad2a28403932335da57fa6c2f224cc549fc01b1f77ce540aa1b4256e3f26ee8"
 
       def install
         bin.install "openrun"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/openrundev/openrun/releases/download/v0.16.17/openrun-v0.16.17-darwin-arm64.tar.gz"
-      sha256 "5bead50e79fa54b01b5b1e805800281ff137a254e26fde24466db3dbbb0d179d"
+      url "https://github.com/openrundev/openrun/releases/download/v0.16.19/openrun-v0.16.19-darwin-arm64.tar.gz"
+      sha256 "f7d20266b7302fda6472473969a7a9f37fd8b50158d250996d71315e30d59524"
 
       def install
         bin.install "openrun"
@@ -30,15 +30,15 @@ class Openrun < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/openrundev/openrun/releases/download/v0.16.17/openrun-v0.16.17-linux-amd64.tar.gz"
-      sha256 "7514c42dc5db3ac259ff558f7a2abf8587a547bd91b32245da10360b6a295495"
+      url "https://github.com/openrundev/openrun/releases/download/v0.16.19/openrun-v0.16.19-linux-amd64.tar.gz"
+      sha256 "fdc8ed3167ae96a5cfb5256cc86ad240dea78d580c3cc1f6ace8b5991ce0ca9e"
       def install
         bin.install "openrun"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/openrundev/openrun/releases/download/v0.16.17/openrun-v0.16.17-linux-arm64.tar.gz"
-      sha256 "130678625fb71ac3c6c91880bd0da580fd240b4cb9a739190d6afe6842c7f413"
+      url "https://github.com/openrundev/openrun/releases/download/v0.16.19/openrun-v0.16.19-linux-arm64.tar.gz"
+      sha256 "22994a8556a3d4dbb134ed0bb3c4f04fe6ea32e34f8580d3b27b9a8097b35b06"
       def install
         bin.install "openrun"
       end
