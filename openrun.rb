@@ -5,22 +5,22 @@
 class Openrun < Formula
   desc ""
   homepage "https://openrun.dev"
-  version "0.18.4"
+  version "0.18.5"
 
   depends_on "mkcert"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/openrundev/openrun/releases/download/v0.18.4/openrun-v0.18.4-darwin-amd64.tar.gz"
-      sha256 "21a578d41c3c64c5c478c5037ded4a0873bd02816e80b01c6a96d3b2300c86d3"
+      url "https://github.com/openrundev/openrun/releases/download/v0.18.5/openrun-v0.18.5-darwin-amd64.tar.gz"
+      sha256 "a7dc9f10c319fc68782b293ad891147cf224682f2b43db91aba2fe437e145777"
 
       def install
         bin.install "openrun"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/openrundev/openrun/releases/download/v0.18.4/openrun-v0.18.4-darwin-arm64.tar.gz"
-      sha256 "9d2dc9e7d03a6c0d0b41b9d39b5d9f999f0307c8e55ef10e2aa6ba4cb54175e1"
+      url "https://github.com/openrundev/openrun/releases/download/v0.18.5/openrun-v0.18.5-darwin-arm64.tar.gz"
+      sha256 "c1b2ed136d51b565d7e065ace2b14be0507e13ed50859a294db8c18a880eb6cb"
 
       def install
         bin.install "openrun"
@@ -30,15 +30,15 @@ class Openrun < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/openrundev/openrun/releases/download/v0.18.4/openrun-v0.18.4-linux-amd64.tar.gz"
-      sha256 "63014879ed3e19625723f06a88fff2c8e80194162dfd4561c7900945f855b0d3"
+      url "https://github.com/openrundev/openrun/releases/download/v0.18.5/openrun-v0.18.5-linux-amd64.tar.gz"
+      sha256 "fc6dbd527425f9f2dfbfea27c5f5fcad229c91031b61729a2b018c39d9794d0d"
       def install
         bin.install "openrun"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/openrundev/openrun/releases/download/v0.18.4/openrun-v0.18.4-linux-arm64.tar.gz"
-      sha256 "8287f83ed06a7c83944699edefcd55a04f23258a7082270ab6ebfd01667fa65a"
+      url "https://github.com/openrundev/openrun/releases/download/v0.18.5/openrun-v0.18.5-linux-arm64.tar.gz"
+      sha256 "f07bc5c259b6a4d7690a33d8a3aaf2bb4587b0818757eaab19a9bf818e3730a1"
       def install
         bin.install "openrun"
       end
